@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página con Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="cerrarModal()">&times;</span>
+      <h2>Iniciar Sesión</h2>
+      <form id="formulario">
+        <label for="username">Usuario:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <button type="button" onclick="iniciarSesion()">Iniciar Sesión</button>
+      </form>
+    </div>
+  </div>
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <!-- Enlace a Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="./img/logo.jpeg" width="30" height="30" class="d-inline-block align-top" alt="Logo">
+        Hardware Gaming
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Periféricos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hardware Gaming</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gabinetes</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  
+    <!-- Agrega aquí el resto de tu contenido -->
+  
+    <!-- Scripts de Bootstrap (jQuery y Popper.js) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <!-- Script de Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+  </html>
+  
+  
+    <div class="container">
+      <h1 class="titulo">Hardware Gaming</h2>
+      <div class="row">
+        <!-- Grilla de productos -->
+        <!-- Producto 1 -->
+        <div class="col-md-4">
+          <div class="producto">
+            <img src="./img/NVIDIA GeForce RTX 3080.jpg" alt="Producto 1" class="img-fluid">
+            <h4>    "Tarjeta gráfica: NVIDIA GeForce RTX 3080",
+            </h4>
+            <p>800$</p>
+            <button class="btn btn-success btn-agregar">Agregar</button>
+            <button class="btn btn-danger btn-borrar">Borrar</button>
+          </div>
+        </div>
+    
+        <!-- Producto 2 -->
+        <div class="col-md-4">
+          <div class="producto">
+            <img src="./img/rysen 7.jpg" alt="Producto 2" class="img-fluid">
+            <h4>    "Procesador: AMD Ryzen 7 5800X",
+            </h4>
+            <p>400$</p>
+            <button class="btn btn-success btn-agregar">Agregar</button>
+            <button class="btn btn-danger btn-borrar">Borrar</button>
+          </div>
+        </div>
+    
+        <!-- Producto 3 -->
+        <div class="col-md-4">
+            <div class="producto">
+              <img src="./img/corsair Vengeance LPX 16GB DDR4.jpg" alt="Producto 2" class="img-fluid">
+              <h4>    "Memoria RAM: Corsair Vengeance LPX 16GB DDR4",
+            </h4>
+              <p>150$</p>
+              <button class="btn btn-success btn-agregar">Agregar</button>
+              <button class="btn btn-danger btn-borrar">Borrar</button>
+            </div>
+          </div>
+    
+          <!-- Producto 4 -->
+        <div class="col-md-4">
+            <div class="producto">
+              <img src="./img/ASUS ROG Strix B550-F Gaming.jpg" alt="Producto 2" class="img-fluid">
+              <h4>    "Placa base: ASUS ROG Strix B550-F Gaming",
+            </h4>
+              <p>200$</p>
+              <button class="btn btn-success btn-agregar">Agregar</button>
+              <button class="btn btn-danger btn-borrar">Borrar</button>
+            </div>
+          </div>
+    
+          <!-- Producto 5 -->
+        <div class="col-md-4">
+            <div class="producto">
+              <img src="./img/Samsung 970 EVO Plus 1TB NVMe.webp" alt="Producto 2" class="img-fluid">
+              <h4>    "Almacenamiento SSD: Samsung 970 EVO Plus 1TB NVMe",
+            </h4>
+              <p>180$</p>
+              <button class="btn btn-success btn-agregar">Agregar</button>
+              <button class="btn btn-danger btn-borrar">Borrar</button>
+            </div>
+          </div>
+    
+          <!-- Producto 6 -->
+        <div class="col-md-4">
+            <div class="producto">
+              <img src="./img/EVGA SuperNOVA 750 G5.png" alt="Producto 2" class="img-fluid">
+              <h4>    "Fuente de alimentación: EVGA SuperNOVA 750 G5",
+            </h4>
+              <p>120$</p>
+              <button class="btn btn-success btn-agregar">Agregar</button>
+              <button class="btn btn-danger btn-borrar">Borrar</button>
+            </div>
+          </div>
+    
+          <!-- Producto 7 -->
+        <div class="col-md-4">
+            <div class="producto">
+              <img src="./img/NZXT Kraken X63.jpg" alt="Producto 2" class="img-fluid">
+              <h4>    "Refrigeración CPU: NZXT Kraken X63",
+            </h4>
+              <p>150$</p>
+              <button class="btn btn-success btn-agregar">Agregar</button>
+              <button class="btn btn-danger btn-borrar">Borrar</button>
+            </div>
+          </div>
+    
+          <!-- Producto 8 -->
+        <div class="col-md-4">
+            <div class="producto">
+              <img src="./img/aSUS VG279Q 27 pulgadas,144Hz.webp" alt="Producto 2" class="img-fluid">
+              <h4>    "Monitor: ASUS VG279Q 27 pulgadas, 144Hz",
+            </h4>
+              <p>300$</p>
+              <button class="btn btn-success btn-agregar">Agregar</button>
+              <button class="btn btn-danger btn-borrar">Borrar</button>
+            </div>
+          </div>
+    
+          <!-- Producto 9 -->
+        <div class="col-md-4">
+            <div class="producto">
+              <img src="./img/Razer BlackWidow Elite.webp" alt="Producto 2" class="img-fluid">
+              <h4>    "Teclado mecánico: Razer BlackWidow Elite",
+            </h4>
+              <p>150$</p>
+              <button class="btn btn-success btn-agregar">Agregar</button>
+              <button class="btn btn-danger btn-borrar">Borrar</button>
+            </div>
+          </div>
+    
+          <!-- Producto 10 -->
+        <div class="col-md-4">
+            <div class="producto">
+              <img src="./img/Razer BlackWidow Elite.jpeg" alt="Producto 2" class="img-fluid">
+              <h4>    "Ratón gaming: Logitech G Pro Wireless"
+            </h4>
+              <p>120$</p>
+              <button class="btn btn-success btn-agregar">Agregar</button>
+              <button class="btn btn-danger btn-borrar">Borrar</button>
+            </div>
+          </div>
+     
+    
+        <!-- Fin de la grilla -->
+        <div class="carrito">
+          <div id="infoProducto"></div>
+         
+         
+         <div id="infoTotal"></div>
+         
+         </div>
+      </div>
+    </div>
+    
+  
+  <!-- Contenido de la página -->
+  
+  <!-- Enlace a Bootstrap JS (jQuery y Popper.js son necesarios para Bootstrap) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>

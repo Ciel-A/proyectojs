@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+}
+  .navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Para ocupar todo el ancho disponible */
+  }
+
+.container{
+  background: rgb(171,31,31);
+  background: radial-gradient(circle, rgba(171,31,31,1) 0%, rgba(70,98,252,1) 100%);
+}
+/* Estilo del modal */
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+}
+
+/* Estilo del modal */
+.modal-content {
+  background-color: #496450f5 !important;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  top: 50%; /* Centra verticalmente */
+  left: 50%; /* Centra horizontalmente */
+  transform: translate(-50%, -50%); 
+}
+/* Botón para cerrar el modal */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Estilo del formulario dentro del modal */
+#formulario {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+input {
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4caf50; /* Color de fondo verde */
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049; /* Color de fondo verde oscuro al pasar el mouse */
+}
+
+
+
+/*estilos de la pagina*/
+
+.titulo{text-align: center;}
+.producto {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+.producto img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.btn-agregar,
+.btn-borrar {
+  margin-top: 10px;
+}
+
+#total {
+  font-weight: bold;
+}
+
+/* Estilos para la clase carrito */
+.carrito {
+  border: 2px solid #333;  /* Borde de 2 píxeles sólido de color gris oscuro (#333) */
+  background-color: #f0f0f0;  /* Fondo de color gris claro (#f0f0f0) */
+  padding: 15px;  /* Añade un relleno de 15 píxeles alrededor del contenido */
+  text-align: center;  /* Centra el contenido horizontalmente */
+  margin-top: 20px;  /* Espaciado superior de 20 píxeles */
+}
+
+/* Estilos para el contenedor de información del producto */
+#infoProducto {
+  margin-top: 10px;
+  font-size: 18px;
+  color: green;
+}
+
+/* Estilos para el contenedor de información del total */
+#infoTotal {
+  margin-top: 10px;
+  font-size: 18px;
+  color: blue;
+}
