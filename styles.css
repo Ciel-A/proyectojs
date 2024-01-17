@@ -2,47 +2,115 @@ body {
   margin: 0;
   font-family: 'Arial', sans-serif;
 }
+#app {
+  background-color: black;
+  color: white; /* Para cambiar el color del texto a blanco para que sea legible en el fondo negro */
+  padding: 20px; /* Añade un relleno para separar el contenido del borde del contenedor */
+}
+
+#formularioProducto {
+  max-width: 400px; /* Establece un ancho máximo para el formulario */
+  margin: 0 auto; /* Centra el formulario horizontalmente dentro del contenedor */
+}
+
+#formularioProducto label,
+#formularioProducto input,
+#formularioProducto button {
+  display: block;
+  margin-bottom: 10px;
+}
 
 .cart-container {
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-color: #f0f0f0;
-    padding: 30px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: rgb(31,171,158);
+  background: radial-gradient(circle, rgba(31,171,158,1) 0%, rgba(70,92,252,1) 100%);
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .cart-icon {
-    font-size: 24px;
-    color: #333;
-    cursor: pointer;
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
 }
 
 .cart-content {
-    display: none;
-    max-height: 200px;
-    overflow-y: auto;
-    border-top: 1px solid #ccc;
-    margin-top: 10px;
-    width: 300px;
+  display: none;
+  max-height: 200px;
+  overflow-y: auto;
+  border-top: 1px solid #ccc;
+  margin-top: 10px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .cart-container .cart-item {
-    display: flex;
-    justify-content: space-between;
-    padding: 5px;
-    border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+  flex: 1;
 }
 
 .cart-container .cart-item img {
-    max-width: 50px;
-    margin-right: 10px;
+  max-width: 50px;
+  max-height: 50%; /* Añadido para evitar que la imagen supere la altura del contenedor */
+  margin-right: 10px;
 }
+
+
+
+.navbar {
+  background: rgb(171,31,31);
+    background: radial-gradient(circle, rgba(171,31,31,1) 0%, rgba(70,98,252,1) 100%); /* Cambia el color de fondo de la barra de navegación */
+  box-shadow: 0px 4px 2px -2px gray; /* Añade una sombra sutil */
+}
+
+.navbar-brand {
+  color: #ffffff; /* Cambia el color del texto del logo */
+  font-weight: bold; /* Hace el texto del logo más grueso */
+  font-size: 1.5em; /* Aumenta el tamaño del texto del logo */
+}
+
+.navbar-brand img {
+  border-radius: 50%; /* Da esquinas redondeadas al logo */
+  margin-right: 10px; /* Añade un pequeño espacio entre el logo y el texto */
+  transition: transform 0.3s; /* Añade una animación al ícono al pasar el mouse */
+}
+
+.navbar-brand:hover img {
+  transform: scale(1.2); /* Hace que el ícono aumente de tamaño al pasar el mouse */
+}
+
+.navbar-toggler-icon {
+  background-color: #ffffff; /* Cambia el color del ícono del botón desplegable */
+}
+
 .navbar-nav {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  width: 100%; /* Para ocupar todo el ancho disponible */
+  justify-content: space-around;
+}
+
+.nav-item {
+  transition: background-color 0.3s; /* Añade un efecto de transición al color de fondo de los elementos del menú */
+}
+
+.nav-item:hover {
+  background-color: #2980b9; /* Cambia el color de fondo al pasar el mouse por encima de los elementos del menú */
+}
+
+.nav-link {
+  color: #ffffff !important; /* Cambia el color del texto de los enlaces */
+  font-size: 1.2em; /* Aumenta el tamaño del texto de los enlaces */
 }
 
  
@@ -137,15 +205,7 @@ body {
     height: auto;
     margin-bottom: 10px;
   }
-  
-  .btn-agregar,
-  .btn-borrar {
-    margin-top: 10px;
-  }
-  
-  #total {
-    font-weight: bold;
-  }
+
   
   
   
