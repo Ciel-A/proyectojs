@@ -134,9 +134,14 @@ function iniciarSesion() {
     document.getElementById('contenido').style.display = 'block';
     document.getElementById('app').style.display = 'block';
   } else {
-    alert('No se inicio como administrador!.');
+    alert('credenciales incorrectas iniciando vista de invitado...!.');
     document.getElementById('app').style.display = 'none';
     document.getElementById('loginModal').style.display = 'none';
+
+
+
+
+    
     // Obtén todos los elementos con la clase 'btn-borrar'
 var botonesABorrar = document.querySelectorAll('.btn-borrar');
 
@@ -150,7 +155,11 @@ botonesABorrar.forEach(function(boton) {
 }
 
 function cerrarModal() {
-  document.getElementById('loginModal').style.display = 'none';
+  // Aquí puedes agregar el código para mostrar el mensaje
+  alert('Debes iniciar sesión');
+
+  // Recarga la página
+  location.reload();
 }
 
 // Muestra el modal al cargar la página
